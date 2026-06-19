@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="My ITOL Vault is a private digital diary for saving daily reflections."
+  />
+
+  <title>My ITOL Vault | Daily Reflections</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="./index.html">
+        My ITOL Vault
+      </a>
+
+      <nav class="main-navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="./index.html">Journal</a>
+        <a class="nav-link" href="./vault.html">Vault</a>
+
+        <a class="button button-small" href="./new-entry.html">
+          New Entry
+        </a>
+
+        <a
+          class="profile-link"
+          href="./vault.html"
+          aria-label="Open your vault"
+        >
+          H
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-introduction">
+      <div class="content-container">
+        <p class="eyebrow">Your private digital journal</p>
+
+        <h1>Daily Reflections</h1>
+
+        <p class="page-description">
+          A sanctuary for your thoughts. Capture quiet moments,
+          ideas and memories before they disappear.
+        </p>
+      </div>
+    </section>
+
+    <section class="entries-section">
+      <div class="content-container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Latest writing</p>
+            <h2>Recent entries</h2>
+          </div>
+
+          <a class="text-link" href="./vault.html">
+            View full vault →
+          </a>
+        </div>
+
+        <!-- JavaScript will place the five newest entries here. -->
+        <div id="entries-grid" class="entries-grid">
+          <p class="loading-message">Loading your reflections...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="writing-prompt-section">
+      <div class="content-container">
+        <div class="writing-prompt">
+          <div class="prompt-icon" aria-hidden="true">✎</div>
+
+          <h2>Feeling inspired?</h2>
+
+          <p>Your vault is waiting for its next entry.</p>
+
+          <a class="text-link" href="./new-entry.html">
+            Start writing now →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="header-container footer-container">
+      <p>© 2026 My ITOL Vault. Designed for reflection.</p>
+
+      <nav class="footer-navigation" aria-label="Footer navigation">
+        <a href="./index.html">Journal</a>
+        <a href="./new-entry.html">New Entry</a>
+        <a href="./vault.html">Archive</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/home.js"></script>
+</body>
+</html>

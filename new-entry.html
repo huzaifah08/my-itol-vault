@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Write and save a new reflection in My ITOL Vault."
+  />
+
+  <title>New Entry | My ITOL Vault</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="./index.html">
+        My ITOL Vault
+      </a>
+
+      <nav class="main-navigation" aria-label="Main navigation">
+        <a class="nav-link" href="./index.html">Journal</a>
+        <a class="nav-link" href="./vault.html">Vault</a>
+
+        <a class="button button-small" href="./new-entry.html">
+          New Entry
+        </a>
+
+        <a
+          class="profile-link"
+          href="./vault.html"
+          aria-label="Open your vault"
+        >
+          H
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="editor-main">
+    <div class="editor-container">
+      <aside class="editor-sidebar">
+        <p class="eyebrow">Private reflection</p>
+
+        <p>
+          Write honestly. Your entry is stored in this browser
+          using localStorage.
+        </p>
+      </aside>
+
+      <section class="editor-panel">
+        <div class="editor-heading">
+          <p id="current-date" class="entry-date">
+            Today's date
+          </p>
+
+          <h1>New Reflection</h1>
+        </div>
+
+        <form id="entry-form" class="entry-form" novalidate>
+          <div class="form-group">
+            <label for="entry-title">Entry title</label>
+
+            <input
+              id="entry-title"
+              name="title"
+              type="text"
+              maxlength="100"
+              placeholder="Untitled reflection"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="form-group form-group-large">
+            <label for="entry-body">Your reflection</label>
+
+            <textarea
+              id="entry-body"
+              name="body"
+              maxlength="5000"
+              placeholder="Begin your reflection..."
+              required
+            ></textarea>
+
+            <div class="textarea-information">
+              <span>Private to this browser</span>
+              <span id="character-count">0 / 5000</span>
+            </div>
+          </div>
+
+          <p
+            id="form-message"
+            class="form-message"
+            role="alert"
+            aria-live="polite"
+          ></p>
+
+          <div class="editor-actions">
+            <a class="discard-link" href="./index.html">
+              Discard
+            </a>
+
+            <button
+              id="save-entry-button"
+              class="button"
+              type="button"
+            >
+              Save Entry
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="header-container footer-container">
+      <p>© 2026 My ITOL Vault. Designed for reflection.</p>
+
+      <nav class="footer-navigation" aria-label="Footer navigation">
+        <a href="./index.html">Journal</a>
+        <a href="./new-entry.html">New Entry</a>
+        <a href="./vault.html">Archive</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/new-entry.js"></script>
+</body>
+</html>
