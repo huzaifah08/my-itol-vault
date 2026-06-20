@@ -14,7 +14,7 @@ Users can write private reflections, save them in the browser and view their lat
 
 ## Screenshot
 
-![My ITOL Vault homepage](./screenshots/home-page.png)
+![My ITOL Vault homepage](https://github.com/huzaifah08/my-itol-vault/blob/main/screenshot/home-page.png)
 
 ## Project Features
 
